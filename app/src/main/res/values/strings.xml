@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ISocial</string>
+    <string name="home">Home</string>
+    <string name="favourites">Favourites</string>
+    <string name="search">Search</string>
+    <string name="profile">Profile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="story_unseen">Story unseen</string>
+    <string name="update_your_status">Update your status</string>
+</resources>
