@@ -35,7 +35,7 @@ class StoriesAdapter(
         }
     }
 
-    override fun getItemCount(): Int = items.size + 1
+    override fun getItemCount(): Int = items.size + 1 // to add the add story item
 
     override fun onBindViewHolder(holder: BaseStoriesViewHolder, position: Int) {
         when(holder){
@@ -45,7 +45,7 @@ class StoriesAdapter(
     }
 
     private fun bindStory(holder: StoriesViewHolder, position: Int) {
-        val currentStory = items[position - 1]
+        val currentStory = items[position - 1] // add story is not on the list of items
 
         holder.binding.apply {
             if (currentStory.seen) {

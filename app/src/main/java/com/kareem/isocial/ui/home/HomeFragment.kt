@@ -16,13 +16,13 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(), HomeActionsListener {
     override val LayoutInflater: (LayoutInflater) -> FragmentHomeBinding =
         FragmentHomeBinding::inflate
 
-    lateinit var adapter: HomeAdapter
+    private lateinit var adapter: HomeAdapter
     override fun setup() {
         initRecycler()
 
     }
 
-    fun initRecycler() {
+    private fun initRecycler() {
         val itemsList: MutableList<HomeItem<Any>> = mutableListOf()
         itemsList.add(HomeItem(DataSource.getStories(), HomeItemType.TYPE_STORY))
         itemsList.add(HomeItem("Update your status", HomeItemType.TYPE_NEW_POST))
